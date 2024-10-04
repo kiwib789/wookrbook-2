@@ -4,7 +4,6 @@ public class fullNameParser {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-
         System.out.print("Enter your first and last name: ");
         String firstLastName = scanner.nextLine();
 
