@@ -16,7 +16,8 @@ public class fullNameParser {
             String lastName = nameParts[1];
             System.out.print("Enter your first middle and last name: ");
             String fullName = scanner.nextLine();
-
+            System.out.println("First Name: " + firstName);
+            System.out.println("Last Name: " + lastName);
 
         }
         if (nameParts.length == 3) {
