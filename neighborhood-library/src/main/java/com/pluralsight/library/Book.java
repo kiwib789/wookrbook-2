@@ -1,8 +1,9 @@
 package com.pluralsight.library;
-import java.io.StringWriter;
 import java.util.Scanner;
-import java.util.ArrayList;
+
+
 public class Book {
+    // variables
     Scanner scanner = new Scanner(System.in);
     private String isbn;
     private int id;
@@ -40,7 +41,7 @@ public class Book {
         this.id = id;
     }
 
-    public boolean isCheckedOut() {
+    public boolean isCheckedOut(String userId, String book) {
         return isCheckedOut;
     }
 
@@ -57,5 +58,20 @@ public class Book {
     }
     public String toString(){
         return "ID: " + id + "Title: " + title + "ISBN: " + isbn + "Checked out: " + isCheckedOut + "Checked out to: "+ checkedOutTo;
+    }
+
+    public void returnBook(String userId, String book) {
+    }
+
+    public void viewCatalog() {
+    }
+
+    public void menu() {
+    }
+
+    public class bookTracker extends Book {
+        public bookTracker(int id, String title, String isbn, boolean isCheckedOut, String checkedOutTo) {
+            super(id, title, isbn, isCheckedOut, checkedOutTo);
+        }
     }
 }
