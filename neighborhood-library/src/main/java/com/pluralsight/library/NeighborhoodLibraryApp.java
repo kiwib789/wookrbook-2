@@ -39,7 +39,7 @@ public class NeighborhoodLibraryApp {
 
 
 
-   Book tracker = new bookTracker.();
+   Book tracker = new Book.Tracker();
          scanner = new Scanner(System.in);
    boolean running = true;
 
@@ -65,7 +65,7 @@ public class NeighborhoodLibraryApp {
      tracker.returnBook(userId, book);
     } else if (choice == 4) {
      running = false;
-     System.out.println("Exiting the Library Tracker.");
+     System.out.println("Exit:");
     } else {
      System.out.println("Invalid option. Please try again.");
     }
