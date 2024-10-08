@@ -52,13 +52,13 @@ public class NeighborhoodLibraryApp {
     if (choice == 1) {
      tracker.viewCatalog();
     } else if (choice == 2) {
-     System.out.print("Enter your User ID: ");
+     System.out.print("Enter book ID: ");
      String userId = scanner.nextLine();
      System.out.print("Enter the name of the book to checkout: ");
      String book = scanner.nextLine();
      tracker.isCheckedOut(userId, book);
     } else if (choice == 3) {
-     System.out.print("Enter your User ID: ");
+     System.out.print("Enter book ID: ");
      String userId = scanner.nextLine();
      System.out.print("Enter the name of the book to return: ");
      String book = scanner.nextLine();
@@ -67,7 +67,7 @@ public class NeighborhoodLibraryApp {
      running = false;
      System.out.println("Exit:");
     } else {
-     System.out.println("Invalid option. Please try again.");
+     System.out.println("Invalid, Please try again.");
     }
    }
 
