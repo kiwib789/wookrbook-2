@@ -56,6 +56,6 @@ public class Book {
         this.checkedOutTo = checkedOutTo;
     }
     public String toString(){
-        return "ID: " + id, "Title: " + title,"ISBN: "
+        return "ID: " + id + "Title: " + title + "ISBN: " + isbn + "Checked out: " + isCheckedOut + "Checked out to: "+ checkedOutTo;
     }
 }

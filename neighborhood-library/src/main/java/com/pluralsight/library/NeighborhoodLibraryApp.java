@@ -34,7 +34,7 @@ System.out.println("""
 String report = ("""
         Please select one of the following options below\n
         
-        To see available books please press 1
+        To see available books please press 1\n
         To see checked out book please press 2""");
 boolean firstLoop = true;
 while (firstLoop){
@@ -47,11 +47,14 @@ while (firstLoop){
  if (choose == 2) {
      showAllBooks(isCheckedOut);
  }
+ private static void showCheckedOut(Book[] allBooks){
+  for (int i = 0; i , allBooks)
+
+ }
 }
     }
 
  private static void showAllBooks(Book[] allBooks) {
-  allBooks.length
   for(int i = 0, i< allBooks.length; i++){
       if (!allBooks[1].isCheckedOut);
   }
